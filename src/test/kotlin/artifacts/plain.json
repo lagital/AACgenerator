@@ -1,0 +1,22 @@
+{
+  "player": {
+  "id": "integer",
+  "name": "string",
+  "fk_role_id": "integer"
+  },
+  "role": {
+    "id": "integer",
+    "title": "string",
+    "fk_location_id": "integer"
+  },
+  "location": {
+  "id": "integer",
+    "title": "string",
+    "fk_pack_id": "integer"
+  },
+  "pack": {
+    "id": "integer",
+    "title": "string",
+    "description": "string"
+  }
+}
