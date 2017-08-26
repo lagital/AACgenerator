@@ -1,2 +1,2 @@
-# acpoet
-Code generation tool which constructs android application core parts based on Android Architecture Components and JSON schema.
+# AACgenerator
+Intellij IDEA code generation plugin which constructs android application core parts based on Android Architecture Components and JSON schema.
