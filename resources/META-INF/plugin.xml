@@ -1,0 +1,40 @@
+<idea-plugin>
+  <id>com.samsara.team.aac.generator</id>
+  <name>Android Architecture Components Generator</name>
+  <version>1.0</version>
+  <vendor email="samsara.inbox@gamil.com">Samsara Team</vendor>
+
+  <description><![CDATA[
+      Enter short description for your plugin here.<br>
+      <em>most HTML tags may be used</em>
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="145.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="AACgenerator.Generate" class="main.kotlin.aacgenerator.GenerateComponents" text="Architecture Components"
+            description="Creates Android Architecture Components from JSON template">
+      <add-to-group group-id="NewGroup" anchor="first"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="meta alt C" second-keystroke="shift meta C"/>
+    </action>
+  </actions>
+
+</idea-plugin>
